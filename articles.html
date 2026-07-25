@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מאמרים — יצחק רוזן Smart Training</title>
+<meta name="description" content="מאמרים מקצועיים בנושא אימון גופני וספורטאים צעירים, מאת יצחק רוזן.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">דלג לתוכן הראשי</a>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-brand">IRST</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about">אודות</a>
+      <a href="index.html#approach">הגישה שלי</a>
+      <a href="index.html#experience">ניסיון</a>
+      <a href="index.html#results">תוצאות</a>
+      <a href="index.html#services">שירותים</a>
+      <a href="articles.html">מאמרים</a>
+      <a href="index.html#contact">יצירת קשר</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="פתיחת תפריט" aria-expanded="false">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap" style="padding-top: 56px;">
+    <p class="section-label">מאמרים</p>
+    <h2>תוכן מקצועי</h2>
+
+    <div class="article-item">
+      <h3>אימון כוח לילדים</h3>
+      <p>מה אומר המחקר על אימוני התנגדות אצל ילדים ומתבגרים — בטיחות, מיתוסים נפוצים, והשפעה על כוח, מהירות, הספק ובריאות העצמות.</p>
+      <a class="read-more" href="article-imun-koach-yeladim.html">קריאת המאמר ←</a>
+    </div>
+    <div class="article-item">
+      <h3>PHV — שיא מהירות הצמיחה</h3>
+      <p>מה זה PHV, למה חשוב להתחשב בשלב הצמיחה הביולוגי בתכנון אימונים לספורטאים צעירים, ואיך מודדים את זה בפועל.</p>
+      <a class="read-more" href="article-phv.html">קריאת המאמר ←</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Isaac Rozen Smart Training
+    <p class="accessibility-note">
+      האתר נבנה תוך תשומת לב לנגישות. נתקלתם בבעיית נגישות באתר?
+      נשמח שתפנו אלינו במייל <a href="mailto:rozen.itzhak@gmail.com">rozen.itzhak@gmail.com</a>.
+    </p>
+  </div>
+</footer>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function () {
+    var isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+</script>
+
+</body>
+</html>
