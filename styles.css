@@ -200,9 +200,6 @@ p:last-child { margin-bottom: 0; }
   height: auto;
   display: block;
   margin: 0 auto 24px;
-  background: #fff;
-  border-radius: 8px;
-  padding: 12px 20px;
 }
 
 /* Placeholder shown until the real logo file is dropped in (see JS onerror fallback below) */
