@@ -271,7 +271,7 @@ p:last-child { margin-bottom: 0; }
   width: 220px;
   margin: 0 0 16px 28px;
   border-radius: 8px;
-  border: 1px solid var(--border);
+  border: 4px solid var(--accent);
   padding: 8px;
 }
 
