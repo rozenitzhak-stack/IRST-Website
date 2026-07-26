@@ -180,7 +180,7 @@ p:last-child { margin-bottom: 0; }
   position: relative;
   padding: 72px 0 48px;
   text-align: center;
-  background: #0a0a0a url("hero-bg.jpg") right center / cover no-repeat;
+  background: #0a0a0a url("hero-bg.jpg") right top / cover no-repeat;
 }
 
 .hero-bg-overlay {
