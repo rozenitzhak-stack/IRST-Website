@@ -200,6 +200,7 @@ p:last-child { margin-bottom: 0; }
   height: auto;
   display: block;
   margin: 0 auto 24px;
+  opacity: 0.8;
 }
 
 /* Placeholder shown until the real logo file is dropped in (see JS onerror fallback below) */
