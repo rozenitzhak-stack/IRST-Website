@@ -266,6 +266,23 @@ p:last-child { margin-bottom: 0; }
 
 /* ---------- About / credentials list ---------- */
 
+.about-photo {
+  float: left;
+  width: 220px;
+  margin: 0 0 16px 28px;
+  border-radius: 8px;
+}
+
+@media (max-width: 560px) {
+  .about-photo {
+    float: none;
+    display: block;
+    width: 60%;
+    max-width: 220px;
+    margin: 0 auto 24px;
+  }
+}
+
 .credentials {
   margin-top: 32px;
 }
