@@ -572,7 +572,8 @@ footer {
 .article-body p {
   font-size: 16.5px;
 }
-.article-body ul {
+.article-body ul,
+main ul {
   margin: 0 0 20px;
   padding-inline-start: 22px;
 }
