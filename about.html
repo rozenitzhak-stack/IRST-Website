@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>אודות — יצחק רוזן Smart Training</title>
+<meta name="description" content="קצת עליי — יצחק רוזן, מאמן יכולות גופניות לספורטאים.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">דלג לתוכן הראשי</a>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-brand">IRST</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="about.html">אודות</a>
+      <a href="approach.html">הגישה שלי</a>
+      <a href="experience.html">ניסיון</a>
+      <a href="results.html">תוצאות</a>
+      <a href="services.html">שירותים</a>
+      <a href="articles.html">מאמרים</a>
+      <a href="contact.html">יצירת קשר</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="פתיחת תפריט" aria-expanded="false">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap" style="padding-top: 56px;">
+    <p class="section-label">אודות</p>
+    <h1 style="font-size: 2rem; margin-bottom: 32px;">קצת עליי</h1>
+
+    <img src="isaac-headshot.png" alt="יצחק רוזן" class="about-photo">
+
+    <p>
+      הספורט תמיד היה חלק מרכזי בחיים שלי. ההתחלה שלי הייתה דווקא באומנויות
+      הלחימה — עשר שנים של עשייה תחרותית, שלימדו אותי משמעת וסבלנות לתהליך ארוך-טווח, עוד לפני
+      שהבנתי כמה זה יעזור לי בהמשך.
+    </p>
+    <p>
+      בצבא הייתי מדריך אימון גופני, וזה היה הרגע שבו הבנתי שהתחום הזה — לעזור לאנשים להיות
+      טובים יותר בגוף שלהם — הוא מה שאני רוצה לעשות. משם המשכתי ללימודי חינוך גופני ולתעודת
+      הדרכה במכללה לחינוך גופני ולספורט ע"ש זינמן במכון וינגייט.
+    </p>
+    <p>
+      שנים אחר כך שיחקתי רוגבי שביעיות, והגעתי לסגל הרחב של נבחרת ישראל. שם הבנתי עוד יותר את
+      החשיבות של עבודה ויכולות גופניות להצלחה ולהנאה מהספורט. במקביל התחלתי לעבוד במעבדות
+      למדעי הספורט — קודם במעבדה לביומכניקה במכון וינגייט, ואחר כך באוניברסיטת תל אביב. שם, בין
+      המעבדה למגרש, נולדה ההבנה שמלווה אותי עד היום: הביצועים הכי טובים לא נבנים רק על ניסיון,
+      וגם לא רק על מדידה — הם נבנים כשמשלבים בין השניים.
+    </p>
+    <p>
+      היום אני מלווה ספורטאי כדורסל, כדורגל, כדורעף וכדוריד — מגיל ההתבגרות ועד לרמה הבוגרת.
+      אני עובד איתם בחדר הכושר, על המגרש, ובמבדקים שמראים בדיוק איפה הם עומדים — לא מרגישים,
+      אלא יודעים.
+    </p>
+
+    <div class="credentials">
+      <div class="credential-row">
+        <div class="credential-year">2010</div>
+        <div class="credential-body">
+          <strong>קורס מאמני כושר ובריאות — אימון קטינים בחדר הכושר</strong>
+          <span>המכללה לחינוך גופני ולספורט ע"ש זינמן במכון וינגייט</span>
+        </div>
+      </div>
+      <div class="credential-row">
+        <div class="credential-year">2018</div>
+        <div class="credential-body">
+          <strong>תואר ראשון בחינוך גופני</strong>
+          <span>המכללה לחינוך גופני ולספורט ע"ש זינמן במכון וינגייט</span>
+        </div>
+      </div>
+      <div class="credential-row">
+        <div class="credential-year">2019</div>
+        <div class="credential-body">
+          <strong>קורס מאמני כושר למשחקי כדור</strong>
+          <span>המכללה לחינוך גופני ולספורט ע"ש זינמן במכון וינגייט</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Isaac Rozen Smart Training
+    <p class="accessibility-note">
+      האתר נבנה תוך תשומת לב לנגישות. נתקלתם בבעיית נגישות באתר?
+      נשמח שתפנו אלינו במייל <a href="mailto:rozen.itzhak@gmail.com">rozen.itzhak@gmail.com</a>.
+    </p>
+  </div>
+</footer>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function () {
+    var isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+</script>
+
+</body>
+</html>

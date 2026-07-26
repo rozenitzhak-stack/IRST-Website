@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>יצחק רוזן — Smart Training</title>
-<meta name="description" content="יצחק רוזן, מאמן יכולות גופניות לספורטאים. עבודה שיטתית ומבוססת על מבדקים אובייקטיביים.">
+<title>תוצאות — יצחק רוזן Smart Training</title>
+<meta name="description" content="מה שנמדד, אפשר לשפר — תוצאות אמיתיות מעבודה עם ספורטאים.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -33,34 +33,46 @@
 </header>
 
 <main id="main">
+  <section class="wrap" style="padding-top: 56px;">
+    <p class="section-label">תוצאות</p>
+    <h1 style="font-size: 2rem; margin-bottom: 32px;">מה שנמדד, אפשר לשפר</h1>
+    <p>
+      שיפור אישי במהלך עונה, אצל שלושה ספורטאים מהקבוצה, בשלושה מבדקי כוח וקפיצה.
+    </p>
 
-  <!-- ============ HERO ============ -->
-  <!-- TODO: replace hero-bg.jpg with the final background photo -->
-  <section class="hero-bg">
-    <div class="hero-bg-overlay"></div>
-    <div class="wrap hero-content">
-      <img src="logo.jpg" alt="Isaac Rozen Smart Training — IRST" class="hero-logo" id="heroLogo">
-
-      <h1>פיתוח ספורטאים על בסיס מדידה, נתונים ומחקר</h1>
-      <p class="subtext">
-        יצחק רוזן, מאמן יכולות גופניות לספורטאים. עבודה שיטתית ומבוססת על מבדקים אובייקטיביים.
-      </p>
-
-      <div class="hero-actions">
-        <a href="contact.html" class="btn-primary">לתיאום שיחה</a>
-        <a href="approach.html" class="link-secondary">להכיר את הגישה</a>
-      </div>
+    <div class="results-table-wrap">
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>CMJ</th>
+            <th>SJ</th>
+            <th>Broad Jump</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ת.כ</td>
+            <td>+18%</td>
+            <td>+22%</td>
+            <td>+2%</td>
+          </tr>
+          <tr>
+            <td>צ.ח</td>
+            <td>+20%</td>
+            <td>+12%</td>
+            <td>+8%</td>
+          </tr>
+          <tr>
+            <td>ר.ב</td>
+            <td>+14%</td>
+            <td>+16%</td>
+            <td>+3%</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
-
-  <div class="wrap">
-    <div class="facts-strip">
-      <div class="fact"><strong>מבדקים</strong> — מותאמים אישית לספורטאי</div>
-      <div class="fact"><strong>טווח גילאים</strong> — 12+</div>
-      <div class="fact"><strong>אזור פעילות</strong> — השרון</div>
-    </div>
-  </div>
-
 </main>
 
 <footer>
@@ -80,14 +92,6 @@
     var isOpen = navLinks.classList.toggle('open');
     navToggle.classList.toggle('open', isOpen);
     navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-
-  var heroLogo = document.getElementById('heroLogo');
-  heroLogo.addEventListener('error', function () {
-    var placeholder = document.createElement('div');
-    placeholder.className = 'hero-logo-placeholder';
-    placeholder.textContent = 'לוגו IRST — יופיע כאן לאחר הוספת הקובץ logo.png';
-    heroLogo.replaceWith(placeholder);
   });
 </script>
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ניסיון מקצועי — יצחק רוזן Smart Training</title>
+<meta name="description" content="איפה עבד יצחק רוזן — ניסיון מקצועי בליווי גופני לספורטאים.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">דלג לתוכן הראשי</a>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-brand">IRST</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="about.html">אודות</a>
+      <a href="approach.html">הגישה שלי</a>
+      <a href="experience.html">ניסיון</a>
+      <a href="results.html">תוצאות</a>
+      <a href="services.html">שירותים</a>
+      <a href="articles.html">מאמרים</a>
+      <a href="contact.html">יצירת קשר</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="פתיחת תפריט" aria-expanded="false">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap" style="padding-top: 56px;">
+    <p class="section-label">ניסיון מקצועי</p>
+    <h1 style="font-size: 2rem; margin-bottom: 32px;">איפה עבדתי</h1>
+
+    <div class="experience-list">
+      <div class="experience-row">
+        <div class="experience-year">2018–23</div>
+        <div class="experience-main"><strong>אליצור נתניה</strong> — כדורסל נשים</div>
+        <div class="experience-role">אחראי גופני, מחלקת נשים ונערות</div>
+      </div>
+      <div class="experience-row">
+        <div class="experience-year">2020–21</div>
+        <div class="experience-main"><strong>מכבי עמק חפר</strong> — כדורגל נשים</div>
+        <div class="experience-role">מאמן כושר, בוגרות ונערות — ליגת העל נשים</div>
+      </div>
+      <div class="experience-row">
+        <div class="experience-year">2022–23</div>
+        <div class="experience-main"><strong>אליצור עירוני נתניה</strong> — כדורסל</div>
+        <div class="experience-role">מאמן כושר בוגרים, ליגה לאומית</div>
+      </div>
+      <div class="experience-row">
+        <div class="experience-year">2023–</div>
+        <div class="experience-main"><strong>הפועל עמק חפר</strong> — כדורסל</div>
+        <div class="experience-role">מאמן כושר גופני, מחלקת נוער — קבוצה, אקדמיה והעשרה פרטנית</div>
+      </div>
+      <div class="experience-row">
+        <div class="experience-year">&nbsp;</div>
+        <div class="experience-main"><strong>מבדקים איזוקינטיים ואימונים</strong></div>
+        <div class="experience-role">מבדקי חזרה למגרש והערכה לאחר שיקום</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Isaac Rozen Smart Training
+    <p class="accessibility-note">
+      האתר נבנה תוך תשומת לב לנגישות. נתקלתם בבעיית נגישות באתר?
+      נשמח שתפנו אלינו במייל <a href="mailto:rozen.itzhak@gmail.com">rozen.itzhak@gmail.com</a>.
+    </p>
+  </div>
+</footer>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function () {
+    var isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+</script>
+
+</body>
+</html>

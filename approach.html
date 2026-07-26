@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>יצחק רוזן — Smart Training</title>
-<meta name="description" content="יצחק רוזן, מאמן יכולות גופניות לספורטאים. עבודה שיטתית ומבוססת על מבדקים אובייקטיביים.">
+<title>הגישה שלי — יצחק רוזן Smart Training</title>
+<meta name="description" content="Smart Training — הגישה של יצחק רוזן לפיתוח אתלטי ארוך-טווח.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -33,34 +33,44 @@
 </header>
 
 <main id="main">
+  <section class="wrap" style="padding-top: 56px;">
+    <p class="section-label">הגישה שלי</p>
+    <h1 style="font-size: 2rem; margin-bottom: 32px;">Smart Training</h1>
+    <p class="approach-intro">
+      לא סתם אימון כושר. כל תוכנית בנויה סביב עקרונות אימון ופיתוח יכולות גופניות ארוכי טווח,
+      עם התאמה לשלב ההתפתחותי של הספורטאי — לא רק לגיל שלו על הנייר.
+    </p>
 
-  <!-- ============ HERO ============ -->
-  <!-- TODO: replace hero-bg.jpg with the final background photo -->
-  <section class="hero-bg">
-    <div class="hero-bg-overlay"></div>
-    <div class="wrap hero-content">
-      <img src="logo.jpg" alt="Isaac Rozen Smart Training — IRST" class="hero-logo" id="heroLogo">
-
-      <h1>פיתוח ספורטאים על בסיס מדידה, נתונים ומחקר</h1>
-      <p class="subtext">
-        יצחק רוזן, מאמן יכולות גופניות לספורטאים. עבודה שיטתית ומבוססת על מבדקים אובייקטיביים.
-      </p>
-
-      <div class="hero-actions">
-        <a href="contact.html" class="btn-primary">לתיאום שיחה</a>
-        <a href="approach.html" class="link-secondary">להכיר את הגישה</a>
+    <div class="approach-item">
+      <div class="approach-num">01</div>
+      <div class="approach-body">
+        <h3>חדר כושר</h3>
+        <p>
+          פיתוח ארוך-טווח של מרכיבי הכוח, בהתאם לגיל, רמה ורקע, עם התאמה של משתני האימון.
+        </p>
+      </div>
+    </div>
+    <div class="approach-item">
+      <div class="approach-num">02</div>
+      <div class="approach-body">
+        <h3>מגרש</h3>
+        <p>
+          עבודת רגליים ותנועה ספציפית לענף, כדי לייצר המרה מיטבית של היכולות שבנינו בחדר כושר
+          למצבי משחק אמיתיים.
+        </p>
+      </div>
+    </div>
+    <div class="approach-item">
+      <div class="approach-num">03</div>
+      <div class="approach-body">
+        <h3>מדידה</h3>
+        <p>
+          תכנון ארוך-טווח שמתחשב בשלב ההתפתחות הביולוגי והקוגניטיבי, לא רק הכרונולוגי — עם
+          מבדקים תקופתיים שמראים שיפור אמיתי.
+        </p>
       </div>
     </div>
   </section>
-
-  <div class="wrap">
-    <div class="facts-strip">
-      <div class="fact"><strong>מבדקים</strong> — מותאמים אישית לספורטאי</div>
-      <div class="fact"><strong>טווח גילאים</strong> — 12+</div>
-      <div class="fact"><strong>אזור פעילות</strong> — השרון</div>
-    </div>
-  </div>
-
 </main>
 
 <footer>
@@ -80,14 +90,6 @@
     var isOpen = navLinks.classList.toggle('open');
     navToggle.classList.toggle('open', isOpen);
     navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-
-  var heroLogo = document.getElementById('heroLogo');
-  heroLogo.addEventListener('error', function () {
-    var placeholder = document.createElement('div');
-    placeholder.className = 'hero-logo-placeholder';
-    placeholder.textContent = 'לוגו IRST — יופיע כאן לאחר הוספת הקובץ logo.png';
-    heroLogo.replaceWith(placeholder);
   });
 </script>
 

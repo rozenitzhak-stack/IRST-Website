@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>יצירת קשר — יצחק רוזן Smart Training</title>
+<meta name="description" content="מוכנים להתחיל? השאירו פרטים ואחזור אליכם, או פנו ישירות ברשתות החברתיות.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">דלג לתוכן הראשי</a>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-brand">IRST</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="about.html">אודות</a>
+      <a href="approach.html">הגישה שלי</a>
+      <a href="experience.html">ניסיון</a>
+      <a href="results.html">תוצאות</a>
+      <a href="services.html">שירותים</a>
+      <a href="articles.html">מאמרים</a>
+      <a href="contact.html">יצירת קשר</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="פתיחת תפריט" aria-expanded="false">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap" style="padding-top: 56px;">
+    <p class="section-label">יצירת קשר</p>
+    <h1 style="font-size: 2rem; margin-bottom: 32px;">מוכנים להתחיל?</h1>
+    <p>השאירו פרטים ואחזור אליכם, או פנו ישירות ברשתות החברתיות.</p>
+
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xbdnpzzw" method="POST">
+      <div class="form-group">
+        <label for="fullName">שם מלא</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">טלפון</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="message">הודעה</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <button type="submit" class="btn-primary">שליחה</button>
+    </form>
+
+    <p class="form-success" id="contactSuccess" hidden>
+      תודה! הפרטים נשלחו בהצלחה, ואחזור אליכם בהקדם.
+    </p>
+
+    <div class="contact-channels">
+      <h3>ערוצים ישירים</h3>
+      <ul>
+        <li>אינסטגרם — <a href="https://instagram.com/rozen_isaac" target="_blank" rel="noopener">@rozen_isaac</a></li>
+        <li>פייסבוק — <a href="https://www.facebook.com/IRST89/" target="_blank" rel="noopener">IRST89</a></li>
+        <li>לינקדאין — <a href="https://www.linkedin.com/in/itzhak-rozen-9300a0170" target="_blank" rel="noopener">יצחק רוזן</a></li>
+      </ul>
+      <p class="contact-area">אזור פעילות: השרון</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Isaac Rozen Smart Training
+    <p class="accessibility-note">
+      האתר נבנה תוך תשומת לב לנגישות. נתקלתם בבעיית נגישות באתר?
+      נשמח שתפנו אלינו במייל <a href="mailto:rozen.itzhak@gmail.com">rozen.itzhak@gmail.com</a>.
+    </p>
+  </div>
+</footer>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function () {
+    var isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  var contactForm = document.getElementById('contactForm');
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var submitButton = contactForm.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { 'Accept': 'application/json' }
+    }).then(function (response) {
+      if (response.ok) {
+        contactForm.reset();
+        contactForm.hidden = true;
+        document.getElementById('contactSuccess').hidden = false;
+      } else {
+        alert('משהו השתבש בשליחה. נסו שוב או פנו ישירות ברשתות החברתיות.');
+        submitButton.disabled = false;
+      }
+    }).catch(function () {
+      alert('משהו השתבש בשליחה. נסו שוב או פנו ישירות ברשתות החברתיות.');
+      submitButton.disabled = false;
+    });
+  });
+</script>
+
+</body>
+</html>
