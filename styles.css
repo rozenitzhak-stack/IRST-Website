@@ -584,7 +584,38 @@ main ul {
 .article-meta {
   color: var(--text-secondary);
   font-size: 14px;
-  margin-bottom: 40px;
+  margin-bottom: 0;
+}
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 40px;
+}
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg);
+  cursor: pointer;
+  font-family: inherit;
+}
+.share-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+.share-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 .back-link {
   display: inline-block;
