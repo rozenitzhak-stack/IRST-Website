@@ -623,3 +623,42 @@ main ul {
   font-size: 14px;
   font-weight: 600;
 }
+
+/* ---------- Article tables ---------- */
+
+.article-table-wrap {
+  overflow-x: auto;
+  margin: 0 0 28px;
+}
+.article-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.article-table th,
+.article-table td {
+  padding: 12px 14px;
+  text-align: start;
+  vertical-align: top;
+  border-top: 1px solid var(--border);
+  line-height: 1.6;
+}
+.article-table thead th {
+  border-top: none;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 13px;
+}
+.article-table tbody tr:last-child td {
+  border-bottom: 1px solid var(--border);
+}
+.article-table.is-numeric td:not(:first-child) {
+  text-align: center;
+  direction: ltr;
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.article-table.is-numeric thead th:not(:first-child) { text-align: center; }
+.article-table.is-numeric td:first-child { color: var(--text-secondary); font-size: 14px; }
