@@ -421,6 +421,20 @@ p:last-child { margin-bottom: 0; }
   color: var(--accent);
   font-weight: 600;
 }
+.results-table tr.results-avg td {
+  background: var(--border);
+  color: var(--text);
+  font-weight: 700;
+}
+.results-subtitle {
+  font-size: 1.4rem;
+  margin: 56px 0 16px;
+}
+.results-note {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
 
 /* ---------- Services ---------- */
 
